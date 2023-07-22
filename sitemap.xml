@@ -23,13 +23,6 @@
   </url>
   
   <url>
-    <loc>https://dusign.net/about/index.html</loc>
-    
-    <lastmod>2023-07-22T04:32:19.866Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dusign.net/archive/index.html</loc>
     
     <lastmod>2023-07-22T04:32:19.763Z</lastmod>
@@ -54,6 +47,13 @@
     <loc>https://dusign.net/tags/index.html</loc>
     
     <lastmod>2023-07-22T04:32:05.083Z</lastmod>
+    
+  </url>
+
+  <url>
+    <loc>https://dusign.net/about/index.html</loc>
+    
+    <lastmod>2023-07-22T04:32:19.866Z</lastmod>
     
   </url>
   

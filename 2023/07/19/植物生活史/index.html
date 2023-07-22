@@ -183,14 +183,14 @@
 
                         
                         <li>
-                            <a href="/about/">ABOUT</a>
+                            <a href="/archive/">ARCHIVE</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">ARCHIVE</a>
+                            <a href="/about/">ABOUT</a>
                         </li>
                         
                     
@@ -429,7 +429,7 @@
 <!-- disqus embedded js code start (one page only need to embed once) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "";
+    var disqus_shortname = "null";
     var disqus_identifier = "https://dusign.net/2023/07/19/%E6%A4%8D%E7%89%A9%E7%94%9F%E6%B4%BB%E5%8F%B2/";
     var disqus_url = "https://dusign.net/2023/07/19/%E6%A4%8D%E7%89%A9%E7%94%9F%E6%B4%BB%E5%8F%B2/";
 
@@ -639,6 +639,21 @@
     
         <script src="/js/ribbonDynamic.js"></script>
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
