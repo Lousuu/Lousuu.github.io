@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lousuu.com/photography/index.html</loc>
+    
+    <lastmod>2023-07-25T08:49:57.974Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lousuu.com/2023/07/18/HELLO-WORLD/</loc>
     
-    <lastmod>2023-07-23T14:33:54.940Z</lastmod>
+    <lastmod>2023-07-25T08:47:49.148Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://lousuu.com/about/index.html</loc>
     
     <lastmod>2023-07-23T13:49:50.896Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lousuu.com/photography/index.html</loc>
-    
-    <lastmod>2023-07-23T12:43:09.759Z</lastmod>
     
   </url>
   
