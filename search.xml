@@ -61,6 +61,12 @@
         <content type="html"><![CDATA[<p>hello world</p>]]></content>
       
       
+      <categories>
+          
+          <category> 个人 </category>
+          
+      </categories>
+      
       
     </entry>
     
