@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lousuu.com/photography/index.html</loc>
+    
+    <lastmod>2023-07-31T09:56:18.261Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lousuu.com/tags/index.html</loc>
     
     <lastmod>2023-07-30T06:13:54.158Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://lousuu.com/archive/index.html</loc>
     
     <lastmod>2023-07-26T14:13:36.785Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lousuu.com/photography/index.html</loc>
-    
-    <lastmod>2023-07-25T08:49:57.974Z</lastmod>
     
   </url>
   
