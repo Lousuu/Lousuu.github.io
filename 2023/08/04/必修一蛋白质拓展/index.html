@@ -524,7 +524,7 @@
 <!-- disqus embedded js code start (one page only need to embed once) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "";
+    var disqus_shortname = "null";
     var disqus_identifier = "https://lousuu.com/2023/08/04/%E5%BF%85%E4%BF%AE%E4%B8%80%E8%9B%8B%E7%99%BD%E8%B4%A8%E6%8B%93%E5%B1%95/";
     var disqus_url = "https://lousuu.com/2023/08/04/%E5%BF%85%E4%BF%AE%E4%B8%80%E8%9B%8B%E7%99%BD%E8%B4%A8%E6%8B%93%E5%B1%95/";
 
@@ -734,6 +734,21 @@
     
         <script src="/js/ribbonDynamic.js"></script>
     
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
