@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>错题整理</title>
-      <link href="/2025/01/02/%E9%94%99%E9%A2%98%E6%95%B4%E7%90%86/"/>
-      <url>/2025/01/02/%E9%94%99%E9%A2%98%E6%95%B4%E7%90%86/</url>
-      
-        <content type="html"><![CDATA[<p>1.<script type="math/tex">\int_{1}^{+\infty}\frac{arctanx}{x^2(1+x^2)}\,dx=?</script><br>解<br>令<script type="math/tex">x=tanu</script></p><script type="math/tex; mode=display">原式=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\frac{u}{tan^2usec^2u}\,d(tanu)</script><script type="math/tex; mode=display">=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}ucot^2u\,du</script><script type="math/tex; mode=display">=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}u(csc^2u-1)du</script><script type="math/tex; mode=display">=-\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}u\,d(cotu)-\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}u\,du</script><script type="math/tex; mode=display">=-(ucotu\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}-\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}cotu\,du)-\frac{1}{2}u^2\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}</script><script type="math/tex; mode=display">=-ucotu\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}+\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\frac{1}{sinu}\,d(sinu)-\frac{1}{2}u^2\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}</script><script type="math/tex; mode=display">=-ucotu\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}+ln(sinx)\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}-\frac{1}{2}u^2\bigg|_{\frac{\pi}{4}}^{\frac{\pi}{2}}</script><script type="math/tex; mode=display">=\frac{\pi}{4}+\frac{ln2}{2}-\frac{3}{32}\pi^2</script><p>2.<script type="math/tex">\int\frac{\sqrt[3]{x+2}-2\sqrt[4]{x+2}}{(\sqrt[4]{x+2}-\sqrt[6]{x+2})^7}\,dx</script><br>解<br>取根号的最小公倍数<br>令<script type="math/tex">t=\sqrt[12]{x+2}</script></p><script type="math/tex; mode=display">原式=\int\frac{t^4-2t^3}{(t^3-t^2)^7}\,d(t^{12}-2)</script><script type="math/tex; mode=display">原式=\int\frac{12t^{15}-24t^{14}}{(t^3-t^2)^7}\,dt</script><script type="math/tex; mode=display">=\int\frac{12t-24}{(t-1)^7}\,dt</script><script type="math/tex; mode=display">=12\int\frac{1}{(t-1)^6}\,dt-12\int\frac{1}{(t-1)^7}\,dt</script><script type="math/tex; mode=display">=\frac{2}{(\sqrt[12]{x+2}-1)^6}-\frac{12}{5(\sqrt[12]{x+2}-1)^5}+C</script><p>3.<script type="math/tex">\int\frac{1}{\sqrt[5]{x^3(x+1)^7}}\,dx</script></p><p>4.求f(x)，使对任意实数x有如下等式成立：<script type="math/tex">f(2+x)+2f(1-x)=x^2</script></p><p>5.<script type="math/tex">\lim_{x \to 0}\frac{x^3(\frac{1}{x^2}+sin\frac{1}{x^2})}{x+sinx}</script></p><p>6.<script type="math/tex">若x=1是函数f(x)=\frac{4\sqrt{x+3}-ax-b}{(x-c)^2}的可去间断点，则a=,b=,c=</script></p><p>7.<script type="math/tex">若f(x)在x=x_0点处连续，试证明：函数|f(x)|在x=x_0处也连续。</script></p><p>8.<script type="math/tex">设f(x)=x(x+1)(x+2)......(x+2n),则f'(-n)=</script><br>解</p><script type="math/tex; mode=display">f(x)=(x+n)x(x+1)(x+2)......(x+2n)</script><script type="math/tex; mode=display">令h(x)=x+n, g(x)=x(x+1)......(x+2n)</script><script type="math/tex; mode=display">f'(x)=g(x)+h(x)g'(x)</script><script type="math/tex; mode=display">f'(-n)=g(-n)\\=-n(-n+1)(-n+2)......(-n+n-2)(-n+n-1)(-n+n+1)(-n+n+2)......(-n+2n)\\=(-1)^n(n!)^2</script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>烟花</title>
       <link href="/2025/01/01/%E7%83%9F%E8%8A%B1/"/>
       <url>/2025/01/01/%E7%83%9F%E8%8A%B1/</url>
