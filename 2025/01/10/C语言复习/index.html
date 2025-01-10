@@ -123,7 +123,7 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">983</span> and
+                                Words <span class="post-count">982</span> and
                                 Reading Time <span class="post-count">3</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -268,7 +268,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="第一章-程序设计概述"><a href="#第一章-程序设计概述" class="headerlink" title="第一章 程序设计概述"></a>第一章 程序设计概述</h2><h3 id="C语言的基本元素"><a href="#C语言的基本元素" class="headerlink" title="C语言的基本元素"></a>C语言的基本元素</h3><h4 id="基本字符集"><a href="#基本字符集" class="headerlink" title="基本字符集"></a>基本字符集</h4><ul>
+                <h2 id="程序设计概述"><a href="#程序设计概述" class="headerlink" title="程序设计概述"></a>程序设计概述</h2><h3 id="C语言的基本元素"><a href="#C语言的基本元素" class="headerlink" title="C语言的基本元素"></a>C语言的基本元素</h3><h4 id="基本字符集"><a href="#基本字符集" class="headerlink" title="基本字符集"></a>基本字符集</h4><ul>
 <li>大写英文字母：A~Z</li>
 <li>小写英文字母：a~z</li>
 <li>阿拉伯数字：0~9</li>
@@ -280,7 +280,7 @@
 <li>以字母（不论大小写）或下划线（_）开头</li>
 <li>随后可以跟若干个（包括0个）字母、数字、下划线</li>
 </ul>
-<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h4><p>变量定义语句：数据类型 变量名1,变量名2;<br>常用数据类型：</p>
+<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h3><p>变量定义语句：数据类型 变量名1,变量名2;<br>常用数据类型：</p>
 <div class="table-container">
 <table>
 <thead>
@@ -325,8 +325,8 @@
 </tbody>
 </table>
 </div>
-<h4 id="标准输入输出函数"><a href="#标准输入输出函数" class="headerlink" title="标准输入输出函数"></a>标准输入输出函数</h4><p>库文件：stdio.h，在调用标准输入输出函数时，文件开头应有以下预编译命令：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">或</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br></pre></td></tr></table></figure></p>
-<h4 id="printf函数"><a href="#printf函数" class="headerlink" title="printf函数"></a>printf函数</h4><p>函数格式：<br>printf(“格式控制字符串”,输出项1,输出项2,…);<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,a,b);</span><br></pre></td></tr></table></figure></p>
+<h3 id="标准输入输出函数"><a href="#标准输入输出函数" class="headerlink" title="标准输入输出函数"></a>标准输入输出函数</h3><p>库文件：stdio.h，在调用标准输入输出函数时，文件开头应有以下预编译命令：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">或</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br></pre></td></tr></table></figure></p>
+<h3 id="输出函数printf"><a href="#输出函数printf" class="headerlink" title="输出函数printf"></a>输出函数printf</h3><p>函数格式：<br>printf(“格式控制字符串”,输出项1,输出项2,…);<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,a,b);</span><br></pre></td></tr></table></figure></p>
 <p>格式字符的符号和功能：</p>
 <div class="table-container">
 <table>
@@ -431,8 +431,9 @@
 </table>
 </div>
 <p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> x=<span class="number">2366</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%ld,%8ld,%+8ld\n"</span>,x,x,x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：</p>
-<p><image src="c9b77d9f770d014f976271148991cba.png"></p>
-<h4 id="输入函数scanf"><a href="#输入函数scanf" class="headerlink" title="输入函数scanf"></a>输入函数scanf</h4><p>函数格式：<br>scanf(“格式控制字符串”,输入项1,输入项2,…);</p>
+<image src="c9b77d9f770d014f976271148991cba.png">
+
+<h3 id="输入函数scanf"><a href="#输入函数scanf" class="headerlink" title="输入函数scanf"></a>输入函数scanf</h3><p>函数格式：<br>scanf(“格式控制字符串”,输入项1,输入项2,…);</p>
 <ul>
 <li>输入项必为变量的地址，常用”&amp;变量名”组成</li>
 <li>格式控制字符串中允许包含格式编辑符和原样输入的字符串</li>
@@ -479,7 +480,7 @@
 </table>
 </div>
 <p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="keyword">float</span> x,y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%f%f"</span>,&amp;a,&amp;b,&amp;c,&amp;d);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"a=%d,b=%d,c=%f,d=%f"</span>,a,b,c,d);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><p>如下表</p>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>如下表</p>
 <div class="table-container">
 <table>
 <thead>
@@ -533,7 +534,8 @@
 </table>
 </div>
 <p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello\nWorl\x64"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：</p>
-<image src=""4c1571ad13c54ea465fe0ccb2a2b7bf.png>
+<image src="4c1571ad13c54ea465fe0ccb2a2b7bf.png">
+
 
                 
                 <hr>
@@ -611,7 +613,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第一章-程序设计概述"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">第一章 程序设计概述</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#C语言的基本元素"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">C语言的基本元素</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#基本字符集"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">基本字符集</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#标识符"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">标识符</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#输入输出"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">输入输出</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#变量定义"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">变量定义</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#标准输入输出函数"><span class="toc-nav-number">1.2.2.</span> <span class="toc-nav-text">标准输入输出函数</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#printf函数"><span class="toc-nav-number">1.2.3.</span> <span class="toc-nav-text">printf函数</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#输入函数scanf"><span class="toc-nav-number">1.2.4.</span> <span class="toc-nav-text">输入函数scanf</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#转义字符"><span class="toc-nav-number">1.2.5.</span> <span class="toc-nav-text">转义字符</span></a></li></ol></li></ol></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#程序设计概述"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">程序设计概述</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#C语言的基本元素"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">C语言的基本元素</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#基本字符集"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">基本字符集</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#标识符"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">标识符</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#输入输出"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">输入输出</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#变量定义"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">变量定义</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#标准输入输出函数"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">标准输入输出函数</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#输出函数printf"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">输出函数printf</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#输入函数scanf"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">输入函数scanf</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#转义字符"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">转义字符</span></a></li></ol></li></ol>
             
           
           </div>
