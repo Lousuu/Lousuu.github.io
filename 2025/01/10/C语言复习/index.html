@@ -280,9 +280,112 @@
 <li>以字母（不论大小写）或下划线（_）开头</li>
 <li>随后可以跟若干个（包括0个）字母、数字、下划线</li>
 </ul>
-<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h4><p>变量定义语句：数据类型 变量名1,变量名2;<br>常用数据类型：<br>|数据类型|字节数|<br>|:-:|:-:|<br>|char|1|<br>|char*(指针变量)|8|<br>|short int|2|<br>|int|4|<br>|unsigned int(无符号整型)|4|<br>|float|4|<br>|double|8|<br>|long|4|</p>
+<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h4><p>变量定义语句：数据类型 变量名1,变量名2;<br>常用数据类型：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">字节数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">char*(指针变量)</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">short int</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned int(无符号整型)</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h4 id="标准输入输出函数"><a href="#标准输入输出函数" class="headerlink" title="标准输入输出函数"></a>标准输入输出函数</h4><p>库文件：stdio.h，在调用标准输入输出函数时，文件开头应有以下预编译命令：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">或</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br></pre></td></tr></table></figure></p>
-<h4 id="printf函数"><a href="#printf函数" class="headerlink" title="printf函数"></a>printf函数</h4><p>函数格式：<br>printf(“格式控制字符串”,输出项1,输出项2,…);<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,a,b);</span><br></pre></td></tr></table></figure><br>格式字符的符号和功能：<br>|格式字符|输出项类型|功能项说明|<br>|:-:|:-:|:-:|<br>|d|整型|以十进制形式输出带符号整数|<br>|o|整型|以八进制形式输出无符号整数（不输出前缀0）|<br>|X,x|整型|以十六进制形式输出无符号整数（不输出前缀0x或0X；对于字母，x输出小写，X输出大写）|<br>|u|无符号整型|以十进制形式输出无符号整型|<br>|f|实型|以小数形式输出单、双精度实数，隐含输出六位小数|<br>|e|实型|以指数形式输出单、双精度实数|<br>|g|实型|以%f,%e中较短的输出宽度输出单、双精度实数|<br>|c|字符型|输出单个字符|<br>|s|字符串型|输出字符串|</p>
+<h4 id="printf函数"><a href="#printf函数" class="headerlink" title="printf函数"></a>printf函数</h4><p>函数格式：<br>printf(“格式控制字符串”,输出项1,输出项2,…);<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,a,b);</span><br></pre></td></tr></table></figure></p>
+<p>格式字符的符号和功能：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">输出项类型</th>
+<th style="text-align:center">功能项说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d</td>
+<td style="text-align:center">整型</td>
+<td style="text-align:center">以十进制形式输出带符号整数</td>
+</tr>
+<tr>
+<td style="text-align:center">o</td>
+<td style="text-align:center">整型</td>
+<td style="text-align:center">以八进制形式输出无符号整数（不输出前缀0）</td>
+</tr>
+<tr>
+<td style="text-align:center">X,x</td>
+<td style="text-align:center">整型</td>
+<td style="text-align:center">以十六进制形式输出无符号整数（不输出前缀0x或0X；对于字母，x输出小写，X输出大写）</td>
+</tr>
+<tr>
+<td style="text-align:center">u</td>
+<td style="text-align:center">无符号整型</td>
+<td style="text-align:center">以十进制形式输出无符号整型</td>
+</tr>
+<tr>
+<td style="text-align:center">f</td>
+<td style="text-align:center">实型</td>
+<td style="text-align:center">以小数形式输出单、双精度实数，隐含输出六位小数</td>
+</tr>
+<tr>
+<td style="text-align:center">e</td>
+<td style="text-align:center">实型</td>
+<td style="text-align:center">以指数形式输出单、双精度实数</td>
+</tr>
+<tr>
+<td style="text-align:center">g</td>
+<td style="text-align:center">实型</td>
+<td style="text-align:center">以%f,%e中较短的输出宽度输出单、双精度实数</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">字符型</td>
+<td style="text-align:center">输出单个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:center">字符串型</td>
+<td style="text-align:center">输出字符串</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="table-container">
 <table>
 <thead>
@@ -327,16 +430,110 @@
 </tbody>
 </table>
 </div>
-<p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> x=<span class="number">2366</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%ld,%8ld,%+8ld\n"</span>,x,x,x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：<br><img src="2025-01-10-C语言复习\c9b77d9f770d014f976271148991cba.png" alt=""></p>
+<p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> x=<span class="number">2366</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%ld,%8ld,%+8ld\n"</span>,x,x,x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：</p>
+<p><image src="c9b77d9f770d014f976271148991cba.png"></p>
 <h4 id="输入函数scanf"><a href="#输入函数scanf" class="headerlink" title="输入函数scanf"></a>输入函数scanf</h4><p>函数格式：<br>scanf(“格式控制字符串”,输入项1,输入项2,…);</p>
 <ul>
 <li>输入项必为变量的地址，常用”&amp;变量名”组成</li>
 <li>格式控制字符串中允许包含格式编辑符和原样输入的字符串</li>
 </ul>
-<p>格式控制字符如下：<br>|格式字符|说明|<br>|:-:|:-:|<br>|d|输入带符号的十进制整数|<br>|o|输入无符号的八进制整数（带前导0）|<br>|x|输入无符号的十六进制整数（带前导0x）|<br>|u|输入无符号的十进制整数|<br>|f,e|输入带小数点的形式或指数形式的实型数|<br>|c|输入一个字符|<br>|s|输入字符串|</p>
+<p>格式控制字符如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d</td>
+<td style="text-align:center">输入带符号的十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:center">o</td>
+<td style="text-align:center">输入无符号的八进制整数（带前导0）</td>
+</tr>
+<tr>
+<td style="text-align:center">x</td>
+<td style="text-align:center">输入无符号的十六进制整数（带前导0x）</td>
+</tr>
+<tr>
+<td style="text-align:center">u</td>
+<td style="text-align:center">输入无符号的十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:center">f,e</td>
+<td style="text-align:center">输入带小数点的形式或指数形式的实型数</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">输入一个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:center">输入字符串</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="keyword">float</span> x,y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%f%f"</span>,&amp;a,&amp;b,&amp;c,&amp;d);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"a=%d,b=%d,c=%f,d=%f"</span>,a,b,c,d);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><p>如下表<br>|转义字符|功能|<br>|:-:|:-:|<br>|\0|字符串结束|<br>|\f|换页|<br>|\n|换行|<br>|\r|回车不换行|<br>|\t|跳到下一个制表位|<br>|\|\字符|<br>|\’|单引号|<br>|\”|双引号|<br>|\ddd|用八进制表示的ASCII字符|<br>|\xhh|用十六进制表示的ASCII字符|</p>
-<p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello\nWorl\x64"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：<br><img src="2025-01-10-C语言复习\4c1571ad13c54ea465fe0ccb2a2b7bf.png" alt=""></p>
+<h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><p>如下表</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">转义字符</th>
+<th style="text-align:center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\0</td>
+<td style="text-align:center">字符串结束</td>
+</tr>
+<tr>
+<td style="text-align:center">\f</td>
+<td style="text-align:center">换页</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">换行</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:center">回车不换行</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:center">跳到下一个制表位</td>
+</tr>
+<tr>
+<td style="text-align:center">\</td>
+<td style="text-align:center">\字符</td>
+</tr>
+<tr>
+<td style="text-align:center">\’</td>
+<td style="text-align:center">单引号</td>
+</tr>
+<tr>
+<td style="text-align:center">\”</td>
+<td style="text-align:center">双引号</td>
+</tr>
+<tr>
+<td style="text-align:center">\ddd</td>
+<td style="text-align:center">用八进制表示的ASCII字符</td>
+</tr>
+<tr>
+<td style="text-align:center">\xhh</td>
+<td style="text-align:center">用十六进制表示的ASCII字符</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>例1<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello\nWorl\x64"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>运行结果：</p>
+<image src=""4c1571ad13c54ea465fe0ccb2a2b7bf.png>
 
                 
                 <hr>
